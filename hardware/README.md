@@ -7,7 +7,8 @@ the Virtuabotix [BT2S] Bluetooth Serial Slave device.
 
 I stuffed this board, the BT2S, and the board from a cheap USB phone
 car charger into a small project box and connected it to the 3-pin
-plug from the Sirius satellite radio module in the trunk of my BMW.
+plug formerly connected to the Sirius satellite radio module in the
+trunk of my BMW.
 
 In future revisions I may integrate the 5 V power supply into this board.
 
