@@ -3696,6 +3696,8 @@ W = angled&lt;p&gt;
 </parts>
 <sheets>
 <sheet>
+<description>&lt;h1&gt;I-Bus Adapter&lt;/h1&gt;
+&lt;p&gt;Copyright (c) 2013 by David Barksdale. This work is made available under the terms of the Creative Commons Attribution-ShareAlike 3.0 license, http://creativecommons.org/licenses/by-sa/3.0/.&lt;/p&gt;</description>
 <plain>
 </plain>
 <instances>
