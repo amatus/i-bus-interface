@@ -1,7 +1,7 @@
-IBUS_adapter board
+I-Bus Adapter board
 ==================
 
-The IBUS_adapter board is designed to adapt the I-Bus signals to
+The I-Bus Adapter board is designed to adapt the I-Bus signals to
 TTL serial at 9600 baud 8E1. The serial pinout is compatible with
 the Virtuabotix [BT2S] Bluetooth Serial Slave device.
 
@@ -10,10 +10,14 @@ car charger into a small project box and connected it to the 3-pin
 plug formerly connected to the Sirius satellite radio module in the
 trunk of my BMW.
 
-In future revisions I may integrate the 5 V power supply into this board.
+I-Bus Adapter with Power Supply
+===============================
+
+This is the same ciruit with the addition of a power supply based on
+the MC34063 switching regulator.
 
 Configuring the BT2S
---------------------
+====================
 
 The bluetooth module on the BT2S seems to be a Guangzhou HC
 Information Technology Co. [HC-06]. The full command set can be
@@ -34,6 +38,7 @@ Other useful commands:
 * `AT+NAMExxxx` will change the name of the device for bluethooth
   discovery to xxxx.
 * `AT+PIN0000` will change the pairing code to 0000 (must be 4 digits).
+* `AT+PN` will set the parity back to none.
 
   [bt2s]: https://www.virtuabotix.com/?page_id=3117&productid=609224531705
   [hc-06]: http://www.mcu-turkey.com/wp-content/uploads/2013/01/HC-Serial-Bluetooth-Products-201104.pdf
