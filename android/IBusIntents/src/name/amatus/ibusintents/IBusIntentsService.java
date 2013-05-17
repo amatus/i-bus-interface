@@ -1,5 +1,5 @@
 /*
- * IBusIntentsActivity.java
+ * IBusIntentsService.java
  * Copyright (C) 2013 David Barksdale <amatus.amongus@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,22 +18,32 @@
 
 package name.amatus.ibusintents;
 
-import android.app.Activity;
+import android.app.IntentService;
 import android.content.Intent;
-import android.os.Bundle;
-import name.amatus.ibusintents.IBusIntentsService;
+import android.util.Log;
+import java.util.UUID;
 
-public class IBusIntentsActivity extends Activity
+public class IBusIntentsService extends IntentService
 {
-  /** Called when the activity is first created. */
+  private static final String Name = "IBusIntentsService";
+  private static final UUID BluetoothSDPUUID16ServiceClassSerialPort =
+    UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+
+  public IBusIntentsService() {
+    super(Name);
+  }
+
   @Override
-  public void onCreate(Bundle savedInstanceState)
+  protected void onHandleIntent(Intent intent)
   {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.main);
-    
-    Intent intent = new Intent(this, IBusIntentsService.class);
-    startService(intent);
+    Log.d(Name, "onHandleIntent(intent=" + intent.toString() + ")");
+  }
+
+  @Override
+  public void onDestroy()
+  {
+    Log.d(Name, "onDestroy");
+    super.onDestroy();
   }
 }
 /* vim: set expandtab ts=2 sw=2: */

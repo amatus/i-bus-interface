@@ -11,5 +11,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+	<service android:name=".IBusIntentsService"
+	         android:exported="false" />
     </application>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-sdk android:minSdkVersion="5" />
 </manifest> 
