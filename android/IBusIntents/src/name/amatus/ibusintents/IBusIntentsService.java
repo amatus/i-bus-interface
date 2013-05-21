@@ -54,25 +54,57 @@ public class IBusIntentsService extends IntentService
     }
     BluetoothDevice device =
       adapter.getRemoteDevice(intent.getStringExtra("device"));
-    BluetoothSocket socket;
-    InputStream stream;
     try {
-      socket =
+      BluetoothSocket socket =
         device.createRfcommSocketToServiceRecord(UUID16ServiceClassSerialPort);
       socket.connect();
-      stream = socket.getInputStream();
+      BufferedInputStream stream =
+        new BufferedInputStream(socket.getInputStream());
       while (true) {
-        byte[] buffer = new byte[256];
-        int length = stream.read(buffer);
-        if (-1 == length) {
-          Log.w(Name, "Read failed");
+        stream.mark(258);
+        int source = stream.read();
+        if (-1 == source) {
+          Log.w(Name, "EOF while reading stream");
           break;
         }
-        String hex = new String();
+        int length = stream.read();
+        if (-1 == length) {
+          Log.w(Name, "EOF while reading stream");
+          break;
+        }
+        if (length < 2) {
+          Log.d(Name, "Message too short");
+          stream.reset();
+          stream.skip(1);
+          continue;
+        }
+        byte[] buffer = new byte[length];
+        int count = 0;
+        for (int offset = 0; offset < length; offset += count) {
+          count = stream.read(buffer, offset, length - offset);
+          if (-1 == count) {
+            Log.w(Name, "EOF while reading stream");
+            return;
+          }
+        }
+        String hex = String.format("%02X %02X", source, length);
         for (int i = 0; i < length; ++i) {
           hex += String.format(" %02X", buffer[i]);
         }
         Log.d(Name, "I-Bus says:" + hex);
+        byte checksum = (byte)(source ^ length);
+        for (int i = 0; i < length; ++i) {
+          checksum ^= buffer[i];
+        }
+        if (checksum != 0) {
+          Log.d(Name, String.format("Invalid checksum: %02X", checksum));
+          stream.reset();
+          stream.skip(1);
+          continue;
+        }
+        Log.d(Name, "Message valid");
+        stream.reset();
+        stream.skip(1);
       }
       socket.close();
     } catch (IOException exception) {
