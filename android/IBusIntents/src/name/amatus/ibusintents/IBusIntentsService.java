@@ -23,10 +23,14 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
+import android.os.SystemClock;
+import android.speech.RecognizerIntent;
 import android.util.Log;
+import android.view.KeyEvent;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.ByteBuffer;
 import java.util.UUID;
 
 public class IBusIntentsService extends IntentService
@@ -34,6 +38,15 @@ public class IBusIntentsService extends IntentService
   private static final String Name = "IBusIntentsService";
   private static final UUID UUID16ServiceClassSerialPort =
     UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+  private static final byte STEERING_WHEEL = 0x50;
+  private static final ByteBuffer NEXT_TRACK =
+    ByteBuffer.wrap(new byte[]{ 0x68, 0x3B, 0x01 });
+  private static final ByteBuffer PREVIOUS_TRACK =
+    ByteBuffer.wrap(new byte[]{ 0x68, 0x3B, 0x08 });
+  private static final ByteBuffer DIAL_NUMBER =
+    ByteBuffer.wrap(new byte[]{ (byte)0xC8, 0x3B, (byte)0x80 });
+  private static final ByteBuffer R_T =
+    ByteBuffer.wrap(new byte[]{ (byte)0xC8, 0x01 });
 
   public IBusIntentsService() {
     super(Name);
@@ -103,8 +116,26 @@ public class IBusIntentsService extends IntentService
           continue;
         }
         Log.d(Name, "Message valid");
-        stream.reset();
-        stream.skip(1);
+        if (STEERING_WHEEL == source) {
+          ByteBuffer message = ByteBuffer.wrap(buffer, 0, length - 1);
+          if (message.equals(NEXT_TRACK)) {
+            Intent i = new Intent("com.android.music.musicservicecommand");
+            i.putExtra("command", "next");
+            sendBroadcast(i);
+          } else if (message.equals(PREVIOUS_TRACK)) {
+            Intent i = new Intent("com.android.music.musicservicecommand");
+            i.putExtra("command", "next");
+            sendBroadcast(i);
+          } else if (message.equals(DIAL_NUMBER)) {
+            Intent i = new Intent(RecognizerIntent.ACTION_WEB_SEARCH);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
+          } else if (message.equals(R_T)) {
+            Intent i = new Intent("com.android.music.musicservicecommand");
+            i.putExtra("command", "togglepause");
+            sendBroadcast(i);
+          }
+        }
       }
       socket.close();
     } catch (IOException exception) {
