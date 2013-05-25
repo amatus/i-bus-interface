@@ -124,7 +124,7 @@ public class IBusIntentsService extends IntentService
             sendBroadcast(i);
           } else if (message.equals(PREVIOUS_TRACK)) {
             Intent i = new Intent("com.android.music.musicservicecommand");
-            i.putExtra("command", "next");
+            i.putExtra("command", "previous");
             sendBroadcast(i);
           } else if (message.equals(DIAL_NUMBER)) {
             Intent i = new Intent(RecognizerIntent.ACTION_WEB_SEARCH);
