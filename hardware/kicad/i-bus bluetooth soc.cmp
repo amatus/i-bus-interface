@@ -1,0 +1,178 @@
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Thu 20 Feb 2014 01:14:36 AM CST
+
+BeginCmp
+TimeStamp = /5302431F;
+Reference = A1;
+ValeurCmp = 2450AT42A100;
+IdModule  = ANTENNA-JOHANSON-2.45GHZ;
+EndCmp
+
+BeginCmp
+TimeStamp = /530588C6;
+Reference = C1;
+ValeurCmp = 100_uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53058806;
+Reference = C2;
+ValeurCmp = 10_uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53019A10;
+Reference = C3;
+ValeurCmp = 12_pF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53019A14;
+Reference = C4;
+ValeurCmp = 12_pF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53025324;
+Reference = C5;
+ValeurCmp = 1000_pF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5301987F;
+Reference = C6;
+ValeurCmp = 1_uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53025558;
+Reference = C7;
+ValeurCmp = 1_uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5302553D;
+Reference = C8;
+ValeurCmp = 100_nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5302554C;
+Reference = C9;
+ValeurCmp = 100_nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53025546;
+Reference = C10;
+ValeurCmp = 100_nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53025554;
+Reference = C11;
+ValeurCmp = 100_nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5302555B;
+Reference = C12;
+ValeurCmp = 100_nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5302556A;
+Reference = C13;
+ValeurCmp = 220_pF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53024A30;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53024A45;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5302422F;
+Reference = FL1;
+ValeurCmp = 2450BM15A0002;
+IdModule  = BALUN-JOHANSON;
+EndCmp
+
+BeginCmp
+TimeStamp = /5300F9AD;
+Reference = J1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53024818;
+Reference = J2;
+ValeurCmp = CONN_6;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53025209;
+Reference = R1;
+ValeurCmp = 2.21_K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53025214;
+Reference = R2;
+ValeurCmp = 2.21_K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5301993D;
+Reference = R3;
+ValeurCmp = 56_K_1%;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53057E3F;
+Reference = U1;
+ValeurCmp = MCP2025;
+IdModule  = SO8N;
+EndCmp
+
+BeginCmp
+TimeStamp = /53019544;
+Reference = U2;
+ValeurCmp = CC2541;
+IdModule  = VQFN40;
+EndCmp
+
+BeginCmp
+TimeStamp = /530199D3;
+Reference = X1;
+ValeurCmp = 32_MHz;
+IdModule  = OSCILLATOR-FOX924;
+EndCmp
+
+EndListe

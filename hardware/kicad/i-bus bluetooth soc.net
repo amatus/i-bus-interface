@@ -1,0 +1,263 @@
+# EESchema Netlist Version 1.1 created  Thu 20 Feb 2014 01:14:36 AM CST
+(
+ ( /5302431F ANTENNA-JOHANSON-2.45GHZ A1 2450AT42A100
+  ( 1 N-000029 )
+  ( 2 ? )
+ )
+ ( /530588C6 SM0603_Capa C1 100_uF
+  ( 1 GND )
+  ( 2 N-000036 )
+ )
+ ( /53058806 SM0603_Capa C2 10_uF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /53019A10 SM0603_Capa C3 12_pF
+  ( 1 N-000027 )
+  ( 2 GND )
+ )
+ ( /53019A14 SM0603_Capa C4 12_pF
+  ( 1 N-000034 )
+  ( 2 GND )
+ )
+ ( /53025324 SM0603_Capa C5 1000_pF
+  ( 1 /RESET )
+  ( 2 GND )
+ )
+ ( /5301987F SM0603_Capa C6 1_uF
+  ( 1 N-000022 )
+  ( 2 GND )
+ )
+ ( /53025558 SM0603_Capa C7 1_uF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /5302553D SM0603_Capa C8 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /5302554C SM0603_Capa C9 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /53025546 SM0603_Capa C10 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /53025554 SM0603_Capa C11 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /5302555B SM0603_Capa C12 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /5302556A SM0603_Capa C13 220_pF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /53024A30 LED-0603 D1 LED
+  ( 1 N-000024 )
+  ( 2 N-000004 )
+ )
+ ( /53024A45 LED-0603 D2 LED
+  ( 1 N-000003 )
+  ( 2 N-000005 )
+ )
+ ( /5302422F BALUN-JOHANSON FL1 2450BM15A0002
+  ( 1 N-000029 )
+  ( 2 GND )
+  ( 3 N-000037 )
+  ( 4 N-000018 )
+  ( 5 GND )
+  ( 6 GND )
+ )
+ ( /5300F9AD PIN_ARRAY_3X1 J1 CONN_3
+  ( 1 N-000035 )
+  ( 2 GND )
+  ( 3 N-000036 )
+ )
+ ( /53024818 PIN_ARRAY-6X1 J2 CONN_6
+  ( 1 /DD )
+  ( 2 /DC )
+  ( 3 /RESET )
+  ( 4 /RX-0 )
+  ( 5 /TX-0 )
+  ( 6 GND )
+ )
+ ( /53025209 SM0603 R1 2.21_K
+  ( 1 GND )
+  ( 2 N-000004 )
+ )
+ ( /53025214 SM0603 R2 2.21_K
+  ( 1 GND )
+  ( 2 N-000005 )
+ )
+ ( /5301993D SM0603 R3 56_K_1%
+  ( 1 GND )
+  ( 2 N-000033 )
+ )
+ ( /53057E3F SO8N U1 MCP2025
+  ( 1 N-000036 )
+  ( 2 /CS )
+  ( 3 GND )
+  ( 4 N-000035 )
+  ( 5 /RX-1 )
+  ( 6 /TX-1 )
+  ( 7 /RESET )
+  ( 8 +3.3V )
+ )
+ ( /53019544 VQFN40 U2 CC2541
+  ( 1 GND )
+  ( 2 ? )
+  ( 3 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 /CS )
+  ( 9 N-000024 )
+  ( 10 +3.3V )
+  ( 11 N-000003 )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 /RX-1 )
+  ( 15 /TX-1 )
+  ( 16 /TX-0 )
+  ( 17 /RX-0 )
+  ( 18 ? )
+  ( 19 ? )
+  ( 20 /RESET )
+  ( 21 +3.3V )
+  ( 22 N-000027 )
+  ( 23 N-000034 )
+  ( 24 +3.3V )
+  ( 25 N-000018 )
+  ( 26 N-000037 )
+  ( 27 +3.3V )
+  ( 28 +3.3V )
+  ( 29 +3.3V )
+  ( 30 N-000033 )
+  ( 31 +3.3V )
+  ( 32 ? )
+  ( 33 ? )
+  ( 34 /DC )
+  ( 35 /DD )
+  ( 36 ? )
+  ( 37 ? )
+  ( 38 ? )
+  ( 39 +3.3V )
+  ( 40 N-000022 )
+ )
+ ( /530199D3 OSCILLATOR-FOX924 X1 32_MHz
+  ( 1 N-000027 )
+  ( 2 N-000034 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C12
+ SM*
+ C?
+ C1-1
+$endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
