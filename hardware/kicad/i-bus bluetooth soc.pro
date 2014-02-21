@@ -1,4 +1,4 @@
-update=Thu 20 Feb 2014 01:12:49 AM CST
+update=Thu 20 Feb 2014 11:04:59 PM CST
 version=1
 last_client=cvpcb
 [general]
@@ -84,7 +84,7 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=
+LastNetListRead=i-bus bluetooth soc.net
 [pcbnew/libraries]
 LibName1=sockets
 LibName2=connect
@@ -99,6 +99,7 @@ LibName10=pga_sockets
 LibName11=valves
 LibName12=guan
 LibName13=VQFN40
+LibName14=FA-128
 LibDir=
 [cvpcb]
 version=1

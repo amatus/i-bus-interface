@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 19 Feb 2014 11:02:51 PM CST
+EESchema Schematic File Version 2  date Thu 20 Feb 2014 11:27:15 PM CST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -39,7 +39,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "20 feb 2014"
+Date "21 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -47,6 +47,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 6850 3800
+Wire Wire Line
+	6850 3800 6850 3400
 Wire Wire Line
 	2250 1150 2250 1100
 Connection ~ 2250 1800
@@ -64,7 +67,7 @@ Wire Wire Line
 Connection ~ 7400 6100
 Connection ~ 7050 6100
 Wire Wire Line
-	7050 6100 7050 6150
+	7050 6150 7050 6100
 Connection ~ 7750 6100
 Wire Wire Line
 	7750 6100 7750 6150
@@ -125,12 +128,12 @@ Connection ~ 8200 5200
 Wire Wire Line
 	8000 5150 8000 5200
 Wire Wire Line
-	6600 3750 6600 3800
-Connection ~ 6600 3200
+	6550 3800 6550 3750
+Connection ~ 6550 3200
 Wire Wire Line
-	6650 3200 6600 3200
+	6700 3200 6550 3200
 Wire Wire Line
-	7300 3350 7300 3000
+	7350 3350 7350 3000
 Wire Wire Line
 	8200 4750 8200 4700
 Wire Wire Line
@@ -165,17 +168,17 @@ Wire Wire Line
 Wire Wire Line
 	8200 5150 8200 5250
 Wire Wire Line
-	7300 3000 8250 3000
+	7350 3000 8250 3000
 Wire Wire Line
-	8250 2900 6600 2900
+	8250 2900 6550 2900
 Wire Wire Line
-	6600 2900 6600 3350
+	6550 2900 6550 3350
 Wire Wire Line
-	7250 3200 7300 3200
-Connection ~ 7300 3200
+	7300 3200 7350 3200
+Connection ~ 7350 3200
 Wire Wire Line
-	7300 3850 7300 3750
-Connection ~ 7300 3800
+	7350 3850 7350 3750
+Connection ~ 7350 3800
 Wire Wire Line
 	8250 3700 8000 3700
 Wire Wire Line
@@ -184,9 +187,9 @@ Wire Wire Line
 	8250 3300 7700 3300
 Wire Wire Line
 	6150 3800 6150 3750
-Connection ~ 6600 3800
+Connection ~ 6550 3800
 Wire Wire Line
-	7300 3800 5750 3800
+	7350 3800 5750 3800
 Wire Wire Line
 	5750 3800 5750 3750
 Connection ~ 5950 3800
@@ -237,7 +240,7 @@ Wire Wire Line
 	8450 6100 8450 6150
 Connection ~ 8450 6100
 Wire Wire Line
-	8800 6150 8800 6100
+	8800 6100 8800 6150
 Connection ~ 8800 6100
 Wire Wire Line
 	6950 6050 6950 6100
@@ -260,6 +263,9 @@ Wire Wire Line
 	2350 1950 2350 1900
 Wire Wire Line
 	2350 1900 2400 1900
+Wire Wire Line
+	7150 3400 7150 3800
+Connection ~ 7150 3800
 $Comp
 L GND #PWR01
 U 1 1 53058922
@@ -274,7 +280,7 @@ L C C1
 U 1 1 530588C6
 P 2250 1350
 F 0 "C1" H 2300 1450 50  0000 L CNN
-F 1 "100 uF" H 2300 1250 50  0000 L CNN
+F 1 "47 uF" H 2300 1250 50  0000 L CNN
 	1    2250 1350
 	1    0    0    -1  
 $EndComp
@@ -292,7 +298,7 @@ L C C2
 U 1 1 53058806
 P 4500 1850
 F 0 "C2" H 4550 1950 50  0000 L CNN
-F 1 "10 uF" H 4550 1750 50  0000 L CNN
+F 1 "4.7 uF" H 4550 1750 50  0000 L CNN
 	1    4500 1850
 	1    0    0    -1  
 $EndComp
@@ -597,38 +603,38 @@ $EndComp
 $Comp
 L C C4
 U 1 1 53019A14
-P 7300 3550
-F 0 "C4" H 7350 3650 50  0000 L CNN
-F 1 "12 pF" H 7350 3450 50  0000 L CNN
-	1    7300 3550
+P 7350 3550
+F 0 "C4" H 7400 3650 50  0000 L CNN
+F 1 "12 pF" H 7400 3450 50  0000 L CNN
+	1    7350 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C3
 U 1 1 53019A10
-P 6600 3550
-F 0 "C3" H 6650 3650 50  0000 L CNN
-F 1 "12 pF" H 6650 3450 50  0000 L CNN
-	1    6600 3550
+P 6550 3550
+F 0 "C3" H 6600 3650 50  0000 L CNN
+F 1 "12 pF" H 6600 3450 50  0000 L CNN
+	1    6550 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L CRYSTAL X1
+L FA-128 X1
 U 1 1 530199D3
-P 6950 3200
-F 0 "X1" H 6950 3350 60  0000 C CNN
-F 1 "32 MHz" H 6950 3050 60  0000 C CNN
-F 4 "FA-128 32.0000MF20X-K3" H 6950 3200 60  0001 C CNN "PN"
-	1    6950 3200
-	1    0    0    -1  
+P 7000 3200
+F 0 "X1" H 7000 2950 60  0000 C CNN
+F 1 "32 MHz" H 7000 3400 60  0000 C CNN
+F 4 "FA-128 32.0000MF20X-K3" H 7000 3200 60  0001 C CNN "PN"
+	1    7000 3200
+	-1   0    0    -1  
 $EndComp
 $Comp
 L GND #GND014
 U 1 1 53019952
-P 7300 3850
-F 0 "#GND014" H 7300 3850 30  0001 C CNN
-F 1 "GND" H 7300 3780 30  0001 C CNN
-	1    7300 3850
+P 7350 3850
+F 0 "#GND014" H 7350 3850 30  0001 C CNN
+F 1 "GND" H 7350 3780 30  0001 C CNN
+	1    7350 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -668,10 +674,10 @@ F 1 "GND" H 8150 780 30  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #+3.3V017
+L +3.3V #+017
 U 1 1 53019827
 P 8150 1350
-F 0 "#+3.3V017" H 8150 1310 30  0001 C CNN
+F 0 "#+017" H 8150 1310 30  0001 C CNN
 F 1 "+3.3V" H 8150 1460 30  0000 C CNN
 	1    8150 1350
 	1    0    0    -1  
