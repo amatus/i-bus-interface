@@ -1,10 +1,10 @@
-# EESchema Netlist Version 1.1 created  Thu 20 Feb 2014 11:25:55 PM CST
+# EESchema Netlist Version 1.1 created  Fri 21 Feb 2014 09:56:06 PM CST
 (
- ( /530588C6 $noname  C1 47_uF {Lib=C}
-  (    1 GND )
-  (    2 N-000035 )
+ ( /530588C6 $noname  C1 100_uF {Lib=CP1}
+  (    1 N-000035 )
+  (    2 GND )
  )
- ( /53058806 $noname  C2 4.7_uF {Lib=C}
+ ( /53058806 $noname  C2 10_uF {Lib=C}
   (    1 +3.3V )
   (    2 GND )
  )
@@ -158,9 +158,8 @@
 *
 { Allowed footprints by component:
 $component C1
+ CP*
  SM*
- C?
- C1-1
 $endlist
 $component C2
  SM*
@@ -267,7 +266,7 @@ $endfootprintlist
 Net 1 "GND" "GND"
  FL1 6
  J1 2
- C1 1
+ C1 2
  C2 2
  R3 1
  C6 2
@@ -343,13 +342,13 @@ Net 32 "" ""
  C3 1
 Net 33 "" ""
  C4 1
- X1 1
  U2 23
+ X1 1
 Net 34 "" ""
  J1 1
  U1 4
 Net 35 "" ""
- C1 2
+ C1 1
  J1 3
  U1 1
 Net 36 "/CS" "CS"
