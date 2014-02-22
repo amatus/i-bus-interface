@@ -1,4 +1,4 @@
-update=Thu 20 Feb 2014 11:04:59 PM CST
+update=Sat 22 Feb 2014 11:50:20 AM CST
 version=1
 last_client=cvpcb
 [general]
@@ -100,6 +100,7 @@ LibName11=valves
 LibName12=guan
 LibName13=VQFN40
 LibName14=FA-128
+LibName15=EDK-9H
 LibDir=
 [cvpcb]
 version=1

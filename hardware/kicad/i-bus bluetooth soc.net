@@ -1,158 +1,158 @@
-# EESchema Netlist Version 1.1 created  Fri 21 Feb 2014 09:56:06 PM CST
+# EESchema Netlist Version 1.1 created  Sat 22 Feb 2014 12:06:06 PM CST
 (
- ( /530588C6 $noname  C1 100_uF {Lib=CP1}
-  (    1 N-000035 )
-  (    2 GND )
+ ( /5302431F ANTENNA-JOHANSON-2.45GHZ A1 2450AT42A100
+  ( 1 N-000028 )
+  ( 2 ? )
  )
- ( /53058806 $noname  C2 10_uF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /530588C6 EDK-9H C1 100_uF
+  ( 1 N-000035 )
+  ( 2 GND )
  )
- ( /53057E3F MODULE  U1 MCP2025 {Lib=MCP2025}
-  (    1 N-000035 )
-  (    2 /CS )
-  (    3 GND )
-  (    4 N-000034 )
-  (    5 /RX-1 )
-  (    6 /TX-1 )
-  (    7 /RESET )
-  (    8 +3.3V )
+ ( /53058806 SM0603_Capa C2 10_uF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /5302556A $noname  C13 220_pF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /53019A10 SM0603_Capa C3 12_pF
+  ( 1 N-000032 )
+  ( 2 GND )
  )
- ( /5302555B $noname  C12 100_nF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /53019A14 SM0603_Capa C4 12_pF
+  ( 1 N-000033 )
+  ( 2 GND )
  )
- ( /53025558 $noname  C7 1_uF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /53025324 SM0603_Capa C5 1000_pF
+  ( 1 /RESET )
+  ( 2 GND )
  )
- ( /53025554 $noname  C11 100_nF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /5301987F SM0603_Capa C6 1_uF
+  ( 1 N-000022 )
+  ( 2 GND )
  )
- ( /5302554C $noname  C9 100_nF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /53025558 SM0603_Capa C7 1_uF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /53025546 $noname  C10 100_nF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /5302553D SM0603_Capa C8 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /5302553D $noname  C8 100_nF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
+ ( /5302554C SM0603_Capa C9 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /53025324 $noname  C5 1000_pF {Lib=C}
-  (    1 /RESET )
-  (    2 GND )
+ ( /53025546 SM0603_Capa C10 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /53025214 $noname  R2 2.21_K {Lib=R}
-  (    1 GND )
-  (    2 N-000005 )
+ ( /53025554 SM0603_Capa C11 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /53025209 $noname  R1 2.21_K {Lib=R}
-  (    1 GND )
-  (    2 N-000004 )
+ ( /5302555B SM0603_Capa C12 100_nF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /53024A45 $noname  D2 LED {Lib=LED}
-  (    1 N-000003 )
-  (    2 N-000005 )
+ ( /5302556A SM0603_Capa C13 220_pF
+  ( 1 +3.3V )
+  ( 2 GND )
  )
- ( /53024A30 $noname  D1 LED {Lib=LED}
-  (    1 N-000024 )
-  (    2 N-000004 )
+ ( /53024A30 LED-0603 D1 LED
+  ( 1 N-000024 )
+  ( 2 N-000004 )
  )
- ( /53024818 $noname  J2 CONN_6 {Lib=CONN_6}
-  (    1 /DD )
-  (    2 /DC )
-  (    3 /RESET )
-  (    4 /RX-0 )
-  (    5 /TX-0 )
-  (    6 GND )
+ ( /53024A45 LED-0603 D2 LED
+  ( 1 N-000003 )
+  ( 2 N-000005 )
  )
- ( /5302431F $noname  A1 2450AT42A100 {Lib=ANTENNA-NC}
-  (    1 N-000028 )
-  (    2 ? )
+ ( /5302422F BALUN-JOHANSON FL1 2450BM15A0002
+  ( 1 N-000028 )
+  ( 2 GND )
+  ( 3 N-000037 )
+  ( 4 N-000018 )
+  ( 5 GND )
+  ( 6 GND )
  )
- ( /5302422F $noname  FL1 2450BM15A0002 {Lib=BALUN-JTI}
-  (    1 N-000028 )
-  (    2 GND )
-  (    3 N-000037 )
-  (    4 N-000018 )
-  (    5 GND )
-  (    6 GND )
+ ( /5300F9AD PIN_ARRAY_3X1 J1 CONN_3
+  ( 1 N-000034 )
+  ( 2 GND )
+  ( 3 N-000035 )
  )
- ( /53019A14 $noname  C4 12_pF {Lib=C}
-  (    1 N-000033 )
-  (    2 GND )
+ ( /53024818 PIN_ARRAY-6X1 J2 CONN_6
+  ( 1 /DD )
+  ( 2 /DC )
+  ( 3 /RESET )
+  ( 4 /RX-0 )
+  ( 5 /TX-0 )
+  ( 6 GND )
  )
- ( /53019A10 $noname  C3 12_pF {Lib=C}
-  (    1 N-000032 )
-  (    2 GND )
+ ( /53025209 SM0603 R1 2.21_K
+  ( 1 GND )
+  ( 2 N-000004 )
  )
- ( /530199D3 $noname  X1 32_MHz {Lib=FA-128}
-  (    1 N-000033 )
-  (    2 GND )
-  (    3 N-000032 )
-  (    4 GND )
+ ( /53025214 SM0603 R2 2.21_K
+  ( 1 GND )
+  ( 2 N-000005 )
  )
- ( /5301993D $noname  R3 56_K_1% {Lib=R}
-  (    1 GND )
-  (    2 N-000031 )
+ ( /5301993D SM0603 R3 56_K_1%
+  ( 1 GND )
+  ( 2 N-000031 )
  )
- ( /5301987F $noname  C6 1_uF {Lib=C}
-  (    1 N-000022 )
-  (    2 GND )
+ ( /53057E3F SO8N U1 MCP2025
+  ( 1 N-000035 )
+  ( 2 /CS )
+  ( 3 GND )
+  ( 4 N-000034 )
+  ( 5 /RX-1 )
+  ( 6 /TX-1 )
+  ( 7 /RESET )
+  ( 8 +3.3V )
  )
- ( /53019544 MODULE  U2 CC2541 {Lib=CC2541}
-  (    1 GND )
-  (    2 ? )
-  (    3 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
-  (    8 /CS )
-  (    9 N-000024 )
-  (   10 +3.3V )
-  (   11 N-000003 )
-  (   12 ? )
-  (   13 ? )
-  (   14 /RX-1 )
-  (   15 /TX-1 )
-  (   16 /TX-0 )
-  (   17 /RX-0 )
-  (   18 ? )
-  (   19 ? )
-  (   20 /RESET )
-  (   21 +3.3V )
-  (   22 N-000032 )
-  (   23 N-000033 )
-  (   24 +3.3V )
-  (   25 N-000018 )
-  (   26 N-000037 )
-  (   27 +3.3V )
-  (   28 +3.3V )
-  (   29 +3.3V )
-  (   30 N-000031 )
-  (   31 +3.3V )
-  (   32 ? )
-  (   33 ? )
-  (   34 /DC )
-  (   35 /DD )
-  (   36 ? )
-  (   37 ? )
-  (   38 ? )
-  (   39 +3.3V )
-  (   40 N-000022 )
+ ( /53019544 VQFN40 U2 CC2541
+  ( 1 GND )
+  ( 2 ? )
+  ( 3 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 /CS )
+  ( 9 N-000024 )
+  ( 10 +3.3V )
+  ( 11 N-000003 )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 /RX-1 )
+  ( 15 /TX-1 )
+  ( 16 /TX-0 )
+  ( 17 /RX-0 )
+  ( 18 ? )
+  ( 19 ? )
+  ( 20 /RESET )
+  ( 21 +3.3V )
+  ( 22 N-000032 )
+  ( 23 N-000033 )
+  ( 24 +3.3V )
+  ( 25 N-000018 )
+  ( 26 N-000037 )
+  ( 27 +3.3V )
+  ( 28 +3.3V )
+  ( 29 +3.3V )
+  ( 30 N-000031 )
+  ( 31 +3.3V )
+  ( 32 ? )
+  ( 33 ? )
+  ( 34 /DC )
+  ( 35 /DD )
+  ( 36 ? )
+  ( 37 ? )
+  ( 38 ? )
+  ( 39 +3.3V )
+  ( 40 N-000022 )
  )
- ( /5300F9AD $noname  J1 CONN_3 {Lib=CONN_3}
-  (    1 N-000034 )
-  (    2 GND )
-  (    3 N-000035 )
+ ( /530199D3 FA-128 X1 32_MHz
+  ( 1 N-000033 )
+  ( 2 GND )
+  ( 3 N-000032 )
+  ( 4 GND )
  )
 )
 *
@@ -166,12 +166,22 @@ $component C2
  C?
  C1-1
 $endlist
-$component C13
+$component C3
  SM*
  C?
  C1-1
 $endlist
-$component C12
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
  SM*
  C?
  C1-1
@@ -181,7 +191,7 @@ $component C7
  C?
  C1-1
 $endlist
-$component C11
+$component C8
  SM*
  C?
  C1-1
@@ -196,38 +206,20 @@ $component C10
  C?
  C1-1
 $endlist
-$component C8
+$component C11
  SM*
  C?
  C1-1
 $endlist
-$component C5
+$component C12
  SM*
  C?
  C1-1
 $endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component D2
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
+$component C13
+ SM*
+ C?
+ C1-1
 $endlist
 $component D1
  LED-3MM
@@ -238,15 +230,28 @@ $component D1
  LED-1206
  LEDV
 $endlist
-$component C4
- SM*
- C?
- C1-1
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
 $endlist
-$component C3
- SM*
- C?
- C1-1
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
 $endlist
 $component R3
  R?
@@ -255,125 +260,5 @@ $component R3
  R?-*
  SM1206
 $endlist
-$component C6
- SM*
- C?
- C1-1
-$endlist
 $endfootprintlist
 }
-{ Pin List by Nets
-Net 1 "GND" "GND"
- FL1 6
- J1 2
- C1 2
- C2 2
- R3 1
- C6 2
- U2 1
- FL1 2
- FL1 5
- C4 2
- C3 2
- X1 2
- X1 4
- R1 1
- C13 2
- J2 6
- C12 2
- C7 2
- C11 2
- C9 2
- R2 1
- C10 2
- C8 2
- C5 2
- U1 3
-Net 2 "/DD" "DD"
- U2 35
- J2 1
-Net 3 "" ""
- D2 1
- U2 11
-Net 4 "" ""
- R1 2
- D1 2
-Net 5 "" ""
- R2 2
- D2 2
-Net 18 "" ""
- U2 25
- FL1 4
-Net 19 "/TX-1" "TX-1"
- U2 15
- U1 6
-Net 20 "/DC" "DC"
- U2 34
- J2 2
-Net 21 "/RX-1" "RX-1"
- U2 14
- U1 5
-Net 22 "" ""
- U2 40
- C6 1
-Net 23 "/RESET" "RESET"
- C5 1
- U1 7
- U2 20
- J2 3
-Net 24 "" ""
- U2 9
- D1 1
-Net 25 "/RX-0" "RX-0"
- J2 4
- U2 17
-Net 26 "/TX-0" "TX-0"
- J2 5
- U2 16
-Net 28 "" ""
- FL1 1
- A1 1
-Net 31 "" ""
- R3 2
- U2 30
-Net 32 "" ""
- X1 3
- U2 22
- C3 1
-Net 33 "" ""
- C4 1
- U2 23
- X1 1
-Net 34 "" ""
- J1 1
- U1 4
-Net 35 "" ""
- C1 1
- J1 3
- U1 1
-Net 36 "/CS" "CS"
- U2 8
- U1 2
-Net 37 "" ""
- FL1 3
- U2 26
-Net 38 "+3.3V" "+3.3V"
- C9 1
- C10 1
- C8 1
- C11 1
- C7 1
- C12 1
- C2 1
- U1 8
- C13 1
- U2 24
- U2 31
- U2 21
- U2 10
- U2 39
- U2 29
- U2 28
- U2 27
-}
-#End
