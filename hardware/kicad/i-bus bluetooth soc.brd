@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Sun 23 Feb 2014 01:09:01 PM CST
+PCBNEW-BOARD Version 2 date Sun 23 Feb 2014 01:19:15 PM CST
 
 # Created by Pcbnew(2013-jul-07)-stable
 
@@ -62,7 +62,7 @@ Pad2MaskClearance 0.254
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 0.150000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 0.150000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory ""))
 $EndSETUP
 
 $EQUIPOT
@@ -1987,9 +1987,9 @@ De 15 1 10 0 0
 Po 0 148.4884 86.9061 148.463 86.9315 0.1524 -1
 De 15 0 10 53098B46 0
 Po 0 149.8981 91.90228 149.8981 92.252798 0.1524 -1
-De 15 0 11 0 400000
+De 15 0 11 0 0
 Po 0 135.9916 84.836 137.1727 84.836 0.1524 -1
-De 15 0 11 530A4A84 800000
+De 15 0 11 530A4A84 0
 Po 3 135.9916 84.836 135.9916 84.836 0.635 0.3302
 De 15 1 11 0 0
 Po 0 135.9916 86.6394 135.9916 84.836 0.1524 -1
