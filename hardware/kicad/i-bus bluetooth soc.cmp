@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 22 Feb 2014 12:06:06 PM CST
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Sun 30 Mar 2014 11:40:03 AM CDT
 
 BeginCmp
 TimeStamp = /5302431F;
@@ -10,105 +10,105 @@ EndCmp
 BeginCmp
 TimeStamp = /530588C6;
 Reference = C1;
-ValeurCmp = 100_uF;
+ValeurCmp = 100 uF;
 IdModule  = EDK-9H;
 EndCmp
 
 BeginCmp
 TimeStamp = /53058806;
 Reference = C2;
-ValeurCmp = 10_uF;
+ValeurCmp = 10 uF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53019A10;
 Reference = C3;
-ValeurCmp = 12_pF;
+ValeurCmp = 12 pF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53019A14;
 Reference = C4;
-ValeurCmp = 12_pF;
+ValeurCmp = 12 pF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53025324;
 Reference = C5;
-ValeurCmp = 1000_pF;
+ValeurCmp = 1000 pF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /5301987F;
 Reference = C6;
-ValeurCmp = 1_uF;
+ValeurCmp = 1 uF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53025558;
 Reference = C7;
-ValeurCmp = 1_uF;
+ValeurCmp = 1 uF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /5302553D;
 Reference = C8;
-ValeurCmp = 100_nF;
+ValeurCmp = 100 nF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /5302554C;
 Reference = C9;
-ValeurCmp = 100_nF;
+ValeurCmp = 100 nF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53025546;
 Reference = C10;
-ValeurCmp = 100_nF;
+ValeurCmp = 100 nF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53025554;
 Reference = C11;
-ValeurCmp = 100_nF;
+ValeurCmp = 100 nF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /5302555B;
 Reference = C12;
-ValeurCmp = 100_nF;
+ValeurCmp = 100 nF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /5302556A;
 Reference = C13;
-ValeurCmp = 220_pF;
+ValeurCmp = 220 pF;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53024A30;
 Reference = D1;
-ValeurCmp = LED;
+ValeurCmp = RED;
 IdModule  = LED-0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53024A45;
 Reference = D2;
-ValeurCmp = LED;
+ValeurCmp = GREEN;
 IdModule  = LED-0603;
 EndCmp
 
@@ -136,21 +136,21 @@ EndCmp
 BeginCmp
 TimeStamp = /53025209;
 Reference = R1;
-ValeurCmp = 2.21_K;
+ValeurCmp = 75;
 IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53025214;
 Reference = R2;
-ValeurCmp = 2.21_K;
+ValeurCmp = 75;
 IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /5301993D;
 Reference = R3;
-ValeurCmp = 56_K_1%;
+ValeurCmp = 56 K 1%;
 IdModule  = SM0603;
 EndCmp
 
@@ -171,7 +171,7 @@ EndCmp
 BeginCmp
 TimeStamp = /530199D3;
 Reference = X1;
-ValeurCmp = 32_MHz;
+ValeurCmp = 32 MHz;
 IdModule  = FA-128;
 EndCmp
 
